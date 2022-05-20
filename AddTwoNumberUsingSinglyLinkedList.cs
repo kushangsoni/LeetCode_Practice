@@ -80,33 +80,6 @@ namespace LeetCode_Practice
             }
             return tempList;
         }
-        public static void Main(String[] args)
-        {
-            ListNode elementOne = new ListNode(3);
-            ListNode elementTwo = new ListNode(4, elementOne);
-            ListNode elementThree = new ListNode(0);
-
-
-            ListNode eleOne = new ListNode(4);
-            ListNode eletTwo = new ListNode(6, eleOne);
-            ListNode eleThree = new ListNode(1);
-
-            ListNode ListOne = elementThree;
-            ListOne = ReverseSinglyList(ListOne);
-            ListNode ListTwo = eleThree;
-            ListTwo = ReverseSinglyList(ListTwo);
-
-            // Following Code is just for understanding and checking Output of Logic Applied
-            ListNode ListThree = new ListNode();
-            ListThree = AddTwoNumbers(ListOne, ListTwo);
-
-
-            while (ListThree != null)
-            {
-                Console.WriteLine("{0}", ListThree.val);
-                ListThree = ListThree.next;
-            }
-            Console.ReadLine();
-        }
+        
     }
 }
